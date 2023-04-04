@@ -1,0 +1,605 @@
+/*style*/
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+
+/* GENERAL */
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.color-accent {
+    color: #FFBB00;
+}
+
+p {
+    line-height: 1.3;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.shadow-row {
+    box-shadow: inset 0 -11px 25px -15px grey;
+    -webkit-box-shadow: inset 0 -11px 25px -15px grey;
+}
+
+.arrow-down {
+    position: relative;
+    background-color: #ffbb00;
+    width: 100%;
+    height: 2px;
+    line-height: 150px;
+    color: #ffbb00;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.arrow-down::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-bottom: -20px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffbb00;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.arrow-down-down::after {
+    border-bottom-color: #ffbb00;
+    left: 50%;
+    bottom: 100%;
+    margin-left: -18px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('/images/next.png');
+}
+
+.carousel-control-prev-icon {
+    background-image: url('/images/prev.png');
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    left: 0;
+}
+
+.carousel-control-next-icon {
+    position: absolute;
+    right: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 44px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: none;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 100%;
+    transition: opacity 0.15s ease;
+}
+
+/* NAVIGATION */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar .nav-link {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 12px 0;
+}
+
+.navbar .nav-link-de {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 12px 0;
+}
+
+.navbar {
+    border-bottom: 3px solid #FFBB00;
+    padding-bottom: 0;
+}
+
+.nav-link {
+    border-bottom: 3px solid transparent;
+}
+
+.nav-link-de {
+    border-bottom: 3px solid transparent;
+}
+.nav-link:hover {
+    border-bottom: 3px solid #FFBB00;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 0;
+}
+
+.navbar-nav {
+    gap: 1vw;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+
+/* HEADER */
+
+.bg-image-full {
+    background-image: url('../images/egatnom-cover-D.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    height: 565px;
+}
+
+.bg-cs-image-full {
+    background-image: url('../images/egatnom-cover-D-CZ.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    height: 565px;
+}
+
+.bg-de-image-full {
+    background-image: url('../images/egatnom-cover-D-DE.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    height: 565px;
+}
+
+/* MAIN */
+
+.heading-customized,
+.heading-customized-no-border,
+.heading-banner,
+.heading-services,
+.heading-contacts {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading-customized::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid #FFBB00;
+}
+
+.heading-banner::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 3px solid #FFBB00;
+}
+
+.banner-bg {
+    background-image: url('../images/construction-whqat-makes-us-different.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.banner-content {
+    background-image: url('../images/banner-egatnom.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    min-height: 560px;
+}
+
+.text-column {
+    max-width: 601px;
+}
+
+.border-element {
+    /* width: 63%; */
+    min-height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.border-element::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid #FFBB00;
+}
+
+.services {
+    background-image: url('../images/services-background.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: bottom left;
+    background-size: 25%;
+}
+
+.heading-services {
+    font-size: 18px;
+}
+
+.heading-services::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid #FFBB00;
+}
+
+.heading-contacts {
+    font-size: 22px;
+}
+
+.heading-contacts::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 3px solid #FFBB00;
+}
+
+.flag {
+    box-shadow: 0px 0px 2px 1px #00000057;
+    -webkit-box-shadow: 0px 0px 2px 1px #00000057;
+}
+
+.contacts-text-size {
+    font-size: 17px;
+}
+
+.img-container-gallery img {
+    width: 100%;
+    display: block;
+}
+
+.container-gallery {
+    display: block;
+    /* display: grid */
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.parent-slide>.slide:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+
+.slide a {
+    width: 100%;
+    height: 50px;
+}
+
+.slide a img {
+    width: 100%;
+}
+
+.img-container-gallery {
+    position: relative;
+}
+
+.content-gal {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease;
+    color: #fff;
+    opacity: 0;
+}
+
+.img-container-gallery:hover .content-gal {
+    opacity: 1;
+    background: tomato;
+}
+
+.zoom-text {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s linear;
+}
+
+.content-gal h2 {
+    padding: 15px 0;
+}
+
+.zoom-text:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/******** js related *******/
+
+.image-view {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: none;
+}
+
+.image-box {
+    width: 40vw;
+    height: 40vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#prev-btn,
+#next-btn {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.9s ease;
+    cursor: pointer;
+}
+
+#prev-btn {
+    border-right: 25px solid grey;
+    left: -50px;
+}
+
+#next-btn {
+    border-left: 25px solid grey;
+    right: -50px;
+}
+
+#next-btn:hover,
+#prev-btn:hover {
+    opacity: 0.6;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+.footer-logo {
+    background-image: url('../images/egatnom-logo-footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 560px;
+    filter: opacity(0.1);
+    -webkit-filter: opacity(0.1);
+}
+
+
+/* mobile ---------------*/
+
+
+@media screen and (max-width: 991px) {
+
+    #logo {
+        padding-bottom: 1vh;
+    }
+
+    .navbar .nav-link {
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 6px 0;
+    }
+
+    .navbar .nav-link-de {
+        font-size: 11px;
+        padding-bottom: 9px;
+    }
+
+
+    .nav-item {
+        width: 105px;
+    }
+
+    .nav-item-lang {
+        position: relative;
+        left: -40px;
+    }
+    
+    .nav-item-lang a {
+        position: absolute;
+    
+    }
+
+    .bg-image-full {
+        background-image: url('../images/egatnom-cover-M.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+        height: 500px;
+    }
+
+    .bg-cs-image-full {
+        background-image: url('../images/egatnom-cover-M-CZ.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+        height: 500px;
+    }
+
+    .bg-de-image-full {
+        background-image: url('../images/egatnom-cover-M-DE.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+        height: 500px;
+    }
+
+    .heading-customized::after {
+        content: "";
+        width: 50px;
+        left: 0;
+        transform: translateX(0px);
+        border-bottom: 3px solid #FFBB00;
+    }
+
+    .text-column {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .banner-content {
+        background-image: url('../images/banner-egatnom-M.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+        min-height: 300px;
+    }
+
+    .border-element {
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .services {
+        background-size: 55%;
+    }
+
+    .heading-services::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0px);
+        border-bottom: 3px solid #FFBB00;
+    }
+
+    .heading-contacts::after {
+        content: "";
+        width: 50px;
+        left: 0;
+        transform: translateX(0px);
+        border-bottom: 3px solid #FFBB00;
+    }
+
+    .heading-contacts {
+        font-size: 18px;
+    }
+
+    .contacts-text-size {
+        font-size: 15px;
+    }
+
+    #map {
+        width: 100%;
+        height: 250px;
+    }
+
+    .footer-logo {
+        background-image: url('../images/egatnom-logo-footer.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        min-height: 100px;
+        filter: opacity(0.1);
+        -webkit-filter: opacity(0.1);
+    }
+
+}
+
+/****** media queries *******/
+
+@media(max-width: 1080px) {
+    .container-gallery {
+        display: block;
+        /* display: grid */
+        grid-template-columns: repeat(4, 2fr);
+        width: 100%;
+    }
+
+    .image-box {
+        height: 80vw;
+        width: 80vw;
+    }
+}
+
+@media(max-width: 678px) {
+    .image-box {
+        width: 75vw;
+        height: 75vw;
+    }
+}
+
+@media(max-width: 400px) {
+    .image-box {
+        height: 67vw;
+        width: 67vw;
+    }
+}
+
+@media(max-width: 992px) {
+    .slide a {
+        width: 100%;
+        height: 50px;
+    }
+}
+
